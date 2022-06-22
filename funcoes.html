@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  
+  function notaFinal(alunos){
+    aprovados = [];
+    i=0;
+    while(i<alunos.nome.length){
+      if(alunos.nota[i] > 6){
+        aprovados.push(alunos.nome[i])
+      }
+      i++
+    }
+    console.log(aprovados);
+  }
+
+
+  aluno = {'nome': ['Andressa', 'Anatan', 'Diego', 'Lee', 'Victor'],
+            'nota': [8, 6, 3, 10, 8]
+    }
+   
+  notaFinal(aluno);
+
+  
+</script>
+</html>
