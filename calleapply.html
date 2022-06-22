@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+<script>
+  const obj = {
+    'nome':'Diego',
+    'idade': 29
+  };
+  const obj2 = {
+    'nome':'Andressa',
+    'idade': 24
+  };
+  
+  
+
+  function calculaIdade(anos){
+    return `Daqui a ${anos}, ${this.nome} terá ${this.idade + anos} de idade.`;
+    
+  }
+
+  function tempo(pessoa, time){
+    return calculaIdade.call (pessoa, time);
+  }
+  
+  const Diego = tempo(obj, 10);
+  console.log(Diego);
+</script>
+</html>
